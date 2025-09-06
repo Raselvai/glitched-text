@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+  background: linear-gradient(#005699,#004375);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+	position: relative;
+}
+
+header h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 4px 8px #000000;
+}
+
+.glitch-window {
+	position: absolute;
+	top: 0;
+	left: -2px;
+	width: 100%;
+	color: #000000;
+	text-shadow: 2px 0 #f9f8f8, -1px 0 yellow, -2px 0 green;
+	overflow: hidden;
+	animation: customanimate 2500ms infinite linear alternate-reverse;
+}
+
+@keyframes customanimate {
+	0% {
+		clip: rect(31px, 9999px, 94px, 0);
+	}
+	10% {
+		clip: rect(112px, 9999px, 76px, 0);
+	}
+	20% {
+		clip: rect(85px, 9999px, 77px, 0);
+	}
+	30% {
+		clip: rect(27px, 9999px, 97px, 0);
+	}
+	40% {
+		clip: rect(64px, 9999px, 98px, 0);
+	}
+	50% {
+		clip: rect(61px, 9999px, 98px, 0);
+	}
+	60% {
+		clip: rect(99px, 9999px, 114px, 0);
+	}
+	70% {
+		clip: rect(34px, 9999px, 115px, 0);
+	}
+	80% {
+		clip: rect(98px, 9999px, 129px, 0);
+	}
+	90% {
+		clip: rect(43px, 9999px, 96px, 0);
+	}
+	100% {
+		clip: rect(82px, 9999px, 64px, 0);
+	}
+}
